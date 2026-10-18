@@ -3,71 +3,125 @@
   "theme": "mint",
   "name": "Bow",
   "colors": {
-    "primary": "#0092F3",
-    "light": "#BED9F0",
-    "dark": "#00192B"
+    "primary": "#0088FF",
+    "light": "#4DACFF",
+    "dark": "#0070D6"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "navigation": {
     "pages": [
       {
         "group": "Getting Started",
         "pages": [
           "index",
-          "quickstart"
+          "quickstart",
+          "how-bow-works"
+        ]
+      },
+      {
+        "group": "Budgeting",
+        "pages": [
+          "assign-money",
+          "targets",
+          "overspending"
+        ]
+      },
+      {
+        "group": "Transactions",
+        "pages": [
+          "log-a-transaction",
+          "apple-intelligence",
+          "siri-and-shortcuts"
+        ]
+      },
+      {
+        "group": "Accounts",
+        "pages": [
+          "credit-cards",
+          "verify-balance"
+        ]
+      },
+      {
+        "group": "Bank sync & import",
+        "pages": [
+          "connect-your-bank",
+          "approve-bank-transactions",
+          "bank-notifications",
+          "move-from-ynab"
+        ]
+      },
+      {
+        "group": "Your data",
+        "pages": [
+          "subscriptions",
+          "icloud-and-backups",
+          "app-lock",
+          "notifications",
+          "start-over"
+        ]
+      },
+      {
+        "group": "Reference",
+        "pages": [
+          "glossary",
+          "faq"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/images/Screenshot2026-10-16at3.16.16PM.png",
+    "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
     "href": "https://bowbudget.com/"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "href": "https://bowbudget.com/contact",
+        "label": "Contact"
+      },
+      {
+        "href": "https://bowbudget.userjot.com/",
+        "label": "Feedback"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Download Bow",
+      "href": "https://apps.apple.com/app/id6755204642"
     }
   },
   "contextual": {
     "options": [
       "copy",
-      "view",
       "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "claude"
     ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
-  }
+    "links": [
+      {
+        "header": "Bow",
+        "items": [
+          {
+            "label": "Website",
+            "href": "https://bowbudget.com"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "https://bowbudget.com/privacy"
+          },
+          {
+            "label": "Terms of Use",
+            "href": "https://bowbudget.com/terms"
+          },
+          {
+            "label": "Contact",
+            "href": "https://bowbudget.com/contact"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Help for Bow, the envelope budgeting app for iPhone."
 }
