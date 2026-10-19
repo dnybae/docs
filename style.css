@@ -1,0 +1,9 @@
+/* Match bowbudget.com: SF Pro Rounded from the visitor's own device (ui-rounded in Safari, or the
+   installed font on a Mac). Apple's license doesn't allow serving the font files, so M PLUS Rounded 1c,
+   loaded by `fonts` in docs.json, stands in elsewhere. */
+:root:root {
+  --font-family-headings-custom: ui-rounded, 'SF Pro Rounded', 'M PLUS Rounded 1c', -apple-system, system-ui, sans-serif;
+  --font-weight-headings-custom: 600;
+  --font-family-body-custom: ui-rounded, 'SF Pro Rounded', 'M PLUS Rounded 1c', -apple-system, system-ui, sans-serif;
+  --font-weight-body-custom: 400;
+}
