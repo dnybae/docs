@@ -15,7 +15,8 @@
         "pages": [
           "index",
           "quickstart",
-          "how-bow-works"
+          "how-bow-works",
+          "iphone-duo"
         ]
       },
       {
@@ -30,6 +31,7 @@
         "group": "Transactions",
         "pages": [
           "log-a-transaction",
+          "payment-plans",
           "apple-intelligence",
           "siri-and-shortcuts"
         ]
