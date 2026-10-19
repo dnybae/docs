@@ -123,5 +123,15 @@
       }
     ]
   },
-  "description": "Help for Bow, the envelope budgeting app for iPhone."
+  "description": "Help for Bow, the envelope budgeting app for iPhone.",
+  "fonts": {
+    "heading": {
+      "family": "M PLUS Rounded 1c",
+      "weight": 700
+    },
+    "body": {
+      "family": "M PLUS Rounded 1c",
+      "weight": 400
+    }
+  }
 }
