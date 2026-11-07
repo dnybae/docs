@@ -24,13 +24,15 @@
         "pages": [
           "assign-money",
           "targets",
-          "overspending"
+          "overspending",
+          "undo-and-recently-deleted"
         ]
       },
       {
         "group": "Transactions",
         "pages": [
           "log-a-transaction",
+          "scheduled-transactions",
           "payment-plans",
           "apple-intelligence",
           "siri-and-shortcuts"
@@ -59,6 +61,7 @@
           "icloud-and-backups",
           "app-lock",
           "notifications",
+          "widgets",
           "start-over"
         ]
       },

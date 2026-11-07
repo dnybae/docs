@@ -10,11 +10,13 @@ Your budget lives on your iPhone and in your own iCloud. There's no Bow account 
 
 When you're signed in to iCloud, Bow syncs your budget privately to your other devices signed in to the same Apple Account. You don't need to turn anything on. **Settings › iCloud** shows whether sync is on, and the note below it explains any problem, like full iCloud storage.
 
+If changes on this iPhone haven't reached iCloud yet, Budget tells you with **Changes haven't reached iCloud**, so you know your other devices don't have them.
+
 If you're not signed in, your budget is saved on this iPhone and syncs once you sign in.
 
 ## On a new iPhone
 
-Install Bow and sign in to the same Apple Account. Bow looks for your budget in iCloud first.
+Install Bow and sign in to the same Apple Account. Bow looks for your budget in iCloud first. On the welcome screen, tap **Returning User**, and Bow opens your budget as soon as iCloud brings it down. If you start setting up instead and Bow finds a budget, tap **Open My Budget**.
 
 <Warning>
   Wait for Bow to find your budget rather than starting a new one, so you don't end up with two.
@@ -26,7 +28,7 @@ Install Bow and sign in to the same Apple Account. Bow looks for your budget in 
   <Step title="Go to Settings › Manage Data">
   </Step>
   <Step title="Tap Share Backup">
-    Save the file somewhere safe, like Files.
+    Bow prepares your files when the screen opens. Once **Share Backup** appears, tap it and save the file somewhere safe, like Files.
   </Step>
 </Steps>
 
@@ -38,6 +40,12 @@ Want a spreadsheet instead? **Share Transactions Spreadsheet** makes a CSV of ev
 
 In Manage Data, tap **Restore from Backup…** and choose a backup file.
 
+Restore isn't available while your budget is [read-only](/subscriptions), in the demo, or until iCloud finishes bringing in your other devices' changes. You can still share a backup.
+
 <Warning>
-  Restoring replaces everything in your budget, on this iPhone and your other devices. Receipt photos aren't in backups, so restoring removes them. Connect bank sync again afterward.
+  Restoring replaces everything in your budget, on this iPhone and your other devices. Receipt photos aren't in the backup file: photos stay with transactions the backup has, and others are removed. On a new iPhone or after starting over, no photos come back. Connect bank sync again afterward.
 </Warning>
+
+## Two budgets in iCloud
+
+If two of your devices each set up a budget before iCloud brought them together, Bow shows **Two Budgets in iCloud**. Tap **Keep This Budget** under the one you want, on one device. The other budget is deleted on all your devices, after a backup of both is saved to **Files › On My iPhone › Bow**.
