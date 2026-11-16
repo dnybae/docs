@@ -50,6 +50,7 @@
         "pages": [
           "connect-your-bank",
           "approve-bank-transactions",
+          "import-bank-file",
           "bank-notifications",
           "move-from-ynab"
         ]

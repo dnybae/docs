@@ -22,10 +22,12 @@ icon: "book"
 | **Funded** | An envelope that has everything its target asks for this month. |
 | **Underfunded** | An envelope that still needs money to meet its target or upcoming scheduled transactions this month. |
 | **Snoozed** | A target skipped for one month. It asks for nothing that month and is back the next. Its scheduled transactions don’t ask for money that month either, but they’re still entered on their dates. |
-| **Overfunded** | An envelope with more assigned this month than its target asks for. |
+| **Overfunded** | An envelope holding more than its target and upcoming scheduled transactions need this month. **Reduce Overfunding** moves the extra back to Ready to Assign. |
 | **Over budget** | Ready to Assign below zero, because more was assigned than you have. The Ready to Assign bar turns red; tap it to move money back. |
 | **View** | A filter for the Budget screen, like Overspent, Underfunded, Overfunded or Money Available. Make your own with **New Custom View** to show only the envelopes you choose. |
-| **Recent Moves** | Every assignment and move across your budget, newest first, in Budget’s ⋯ menu. |
+| **Recent Moves** | Every assignment and move across your budget, newest first, in Budget’s ⋯ menu and Settings › Budget. |
+| **Budget’s actions** | **Reduce Overfunding**, **Reset Available** and **Reset Assigned**, at the bottom of Budget. Each shows what it would move back to Ready to Assign and lets you review it first. |
+| **Undo and Redo** | In Budget’s ⋯ menu. Take back or redo money moves, edits and deletes made since you opened Bow. |
 
 ## Targets
 
@@ -60,7 +62,7 @@ icon: "book"
 | **Split** | One transaction divided across several envelopes, like a store run that’s part groceries and part household. |
 | **No envelope** | An expense that hasn’t been given an envelope yet. It needs one before your budget is accurate. |
 | **Scheduled transaction** | A repeating transaction, like rent or a paycheck. Bow enters it on its date and adds scheduled expenses to their envelope’s monthly target. It can repeat forever, or end after a number of payments or on a date. |
-| **Payment plan** | A purchase paid in installments through a service like Klarna, Affirm or Afterpay. On an iPhone with Apple Intelligence, share a screenshot of the plan and Bow schedules each payment, ending after the last one. |
+| **Payment plan** | A purchase paid in installments, like through Klarna, Affirm or Afterpay. Use **Split Into Payments** to schedule each payment, or on an iPhone with Apple Intelligence, share a screenshot of the plan. The schedule ends after the last payment. |
 | **Skip** | Leave out one occurrence of a schedule. The schedule stays active for future dates. |
 | **Balance adjustment** | A transaction Bow adds when you change an account’s balance or verify it against your bank. It changes the balance without counting as spending, so it never needs an envelope. |
 | **Shared to Bow** | Receipts and bank notifications you send to Bow from other apps. They wait at the top of Spending until you review and add them. |
@@ -78,13 +80,14 @@ icon: "book"
 | **Pending** | A charge your bank hasn’t posted yet. It shows under Pending at the top of Spending and the account’s screen, but doesn’t count in your budget until it posts. Tap it and choose Add to Budget Now to count it sooner. If you entered the purchase yourself, Bow matches the two right away, and your entry shows a clock until it posts. |
 | **Matched** | A transaction you entered that Bow paired with the same bank transaction, so it’s only counted once. Bow matches on its own when one entry within 10 days has the same amount and payee; when it isn’t sure, it asks you in review. A transfer Bow makes from both accounts’ bank transactions, like a card payment, is matched too. |
 | **Unmatch** | Separate a matched pair if Bow paired the wrong transactions. |
+| **Import Bank File** | Bring in transactions from a CSV, OFX or QFX file you downloaded from your bank, for an account that isn’t linked to bank sync. |
 
 ## Verifying your balance
 
 | Term | Meaning |
 | --- | --- |
 | **Verify balance** | Compare an account’s Posted Balance with your bank’s current balance. When they match, Bow locks every posted transaction. If they don’t, mark what your bank has posted, and Bow can add a Balance Adjustment for what’s left. |
-| **Posted** | Finished at your bank. Transactions from bank sync are posted when they arrive; mark ones you entered posted once your bank shows them. Shown with a green checkmark by the amount. |
+| **Posted** | Finished at your bank. Transactions from bank sync or Import Bank File are posted when they arrive; mark ones you entered posted once your bank shows them. Shown with a green checkmark by the amount. |
 | **Unposted** | In Bow, but your bank hasn’t posted it yet, like a purchase that’s still pending or a check that hasn’t been cashed. New transactions you enter start unposted. Shown with an empty circle. |
 | **Verified** | Posted and locked by a finished Verify Balance, shown with a lock. Changing its amount, account or date means verifying the balance again. |
 | **Posted Balance** | The starting balance plus every posted transaction. This is the balance Verify Balance compares with your bank. |

@@ -14,9 +14,11 @@ If changes on this iPhone haven't reached iCloud yet, Budget tells you with **Ch
 
 If you're not signed in, your budget is saved on this iPhone and syncs once you sign in.
 
+Each time Bow opens, it waits for iCloud to bring down your latest budget before changing anything on its own, like entering scheduled transactions, syncing your bank or saving the daily backup. That way, a device that's been away can't put back older numbers. Changes you make yourself save right away.
+
 ## On a new iPhone
 
-Install Bow and sign in to the same Apple Account. Bow looks for your budget in iCloud first. On the welcome screen, tap **Returning User**, and Bow opens your budget as soon as iCloud brings it down. If you start setting up instead and Bow finds a budget, tap **Open My Budget**.
+Install Bow and sign in to the same Apple Account. Bow looks for your budget in iCloud first. On the welcome screen, tap **Returning User**, and Bow opens your budget as soon as iCloud brings it down. If you start setting up instead and Bow finds a budget, tap **Open My Budget**. To delete it and keep the new one instead, tap **Start Fresh…**. Bow saves a backup of the old budget in **Files › On My iPhone › Bow** first, then deletes it on all your devices.
 
 <Warning>
   Wait for Bow to find your budget rather than starting a new one, so you don't end up with two.
@@ -36,9 +38,17 @@ A backup holds your accounts, envelopes, transactions and schedules. Receipt pho
 
 Want a spreadsheet instead? **Share Transactions Spreadsheet** makes a CSV of every transaction.
 
+## Automatic backups
+
+Bow also saves a backup on your iPhone once a day and keeps the last 14, in **Files › On My iPhone › Bow › Automatic Backups**. Each is named for its day, like "Bow Backup 2026-11-07.json". Manage Data shows when the last one was saved.
+
+These backups stay on this iPhone, and each of your devices keeps its own. Share a backup too if your iPhone might be lost or erased.
+
 ## Restore
 
-In Manage Data, tap **Restore from Backup…** and choose a backup file.
+In Manage Data, tap **Restore from Backup…** and choose a backup file. To go back to an earlier day, open **On My iPhone › Bow › Automatic Backups** and choose one. Tap **Replace Budget** to confirm.
+
+Before replacing anything, Bow saves a backup of your current budget in **Files › On My iPhone › Bow**, so you can switch back. If it can't save one, nothing is restored.
 
 Restore isn't available while your budget is [read-only](/subscriptions), in the demo, or until iCloud finishes bringing in your other devices' changes. You can still share a backup.
 

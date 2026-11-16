@@ -1,0 +1,62 @@
+---
+title: "Import transactions from a bank file"
+sidebarTitle: "Import Bank File"
+description: "Bring transactions into Bow from a CSV, OFX or QFX file you download from your bank's website. Bow matches them to what you've entered and skips ones it already has."
+icon: "file-import"
+---
+
+Not using [bank sync](/connect-your-bank)? Download your transactions from your bank's website as a CSV, OFX or QFX file, and Bow brings them in. It works with any bank, in any country. Bow reads the file on your iPhone and doesn't keep it.
+
+Import Bank File is for open accounts that aren't linked to bank sync. A linked account already gets its transactions from your bank, so a file would add them twice.
+
+## Import a file
+
+<Steps>
+  <Step title="Open Import Bank File">
+    On **Accounts**, touch and hold the account and choose **Import Bank File…**. Or open the account and tap **Import Bank File…** below its balances.
+  </Step>
+  <Step title="Choose the file">
+    Tap **Choose File…** and pick the file you downloaded.
+  </Step>
+  <Step title="Check the columns (CSV only)">
+    Under **Columns**, check **Date**, **Payee** and **Memo**. Under **Amounts**, choose **One Column** if the file has one amount column, or **Money In and Out** if it has two. If purchases show as money in, turn on **Swap Money In and Out**. If Bow can't tell whether dates are month first or day first, choose a **Date Order**. OFX and QFX files skip this step.
+  </Step>
+  <Step title="Review and import">
+    Under **Review**, Bow shows what it will do, then tap **Import**. A message confirms how many transactions came in, with **Undo**.
+  </Step>
+</Steps>
+
+Bow remembers the columns you chose for that account on this iPhone, and uses them again for a file with the same column names.
+
+## What Bow does with each transaction
+
+Bow sorts the file the way bank sync does. The review shows how many land in each group:
+
+| Group | What happens |
+| --- | --- |
+| **New** | Added to the account. |
+| **Matched to Your Entries** | Paired with a transaction you entered, so it's counted once. |
+| **To Review** | Added, and waits in Spending for you to confirm. See [Approve bank transactions](/approve-bank-transactions). |
+| **Paired as Transfers** | Paired with the other side of a transfer, like a card payment. |
+| **Already Imported** | Left out, because it came in from an earlier file. |
+| **Left Out, Before** a date | From before the account's starting balance. Turn on **Include Earlier Transactions** to bring them in as history that doesn't change the balance. |
+
+Imported transactions arrive [posted](/verify-balance).
+
+## Importing again
+
+Bow remembers every transaction it imported, so the same file, or one that overlaps an earlier one, adds only what's new. A transaction you deleted doesn't come back. Two identical purchases on the same day still count as two.
+
+**Lines Skipped** counts lines in a CSV that have no date or amount Bow can read, like a title or a total.
+
+## If something goes wrong
+
+If Bow can't use the file, it says why in **Couldn't import bank file**:
+
+- **Bow couldn't read this file.** Download your transactions from your bank again as a CSV, OFX or QFX file. Bow can't read spreadsheets or PDFs.
+- **This file has no transactions Bow can read.**
+- **This file has transactions from more than one account.** Download one account's transactions at a time.
+
+<Note>
+  Importing changes your budget, so it needs a plan. While your budget is [read-only](/subscriptions), Import Bank File opens Bow's plans.
+</Note>
