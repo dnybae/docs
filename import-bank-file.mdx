@@ -19,7 +19,7 @@ Import Bank File is for open accounts that aren't linked to bank sync. A linked 
     Tap **Choose File…** and pick the file you downloaded.
   </Step>
   <Step title="Check the columns (CSV only)">
-    Under **Columns**, check **Date**, **Payee** and **Memo**. Under **Amounts**, choose **One Column** if the file has one amount column, or **Money In and Out** if it has two. If purchases show as money in, turn on **Swap Money In and Out**. If Bow can't tell whether dates are month first or day first, choose a **Date Order**. OFX and QFX files skip this step.
+    Under **Columns**, check **Date**, **Payee** and **Memo**. Under **Amounts**, choose **One Column** if the file has one amount column, or **Money In and Out** if it has two, like Debit Amount and Credit Amount. If purchases show as money in, turn on **Swap Money In and Out**. If Bow can't tell whether dates are month first or day first, choose a **Date Order**. OFX and QFX files skip this step.
   </Step>
   <Step title="Review and import">
     Under **Review**, Bow shows what it will do, then tap **Import**. A message confirms how many transactions came in, with **Undo**.
@@ -27,6 +27,8 @@ Import Bank File is for open accounts that aren't linked to bank sync. A linked 
 </Steps>
 
 Bow remembers the columns you chose for that account on this iPhone, and uses them again for a file with the same column names.
+
+In a CSV, an amount marked **DR** is money out and one marked **CR** is money in, like “12.50 DR”. Amounts grouped the Indian way, like “1,00,000.00”, read too.
 
 ## What Bow does with each transaction
 
@@ -56,6 +58,7 @@ If Bow can't use the file, it says why in **Couldn't import bank file**:
 - **Bow couldn't read this file.** Download your transactions from your bank again as a CSV, OFX or QFX file. Bow can't read spreadsheets or PDFs.
 - **This file has no transactions Bow can read.**
 - **This file has transactions from more than one account.** Download one account's transactions at a time.
+- **iCloud is still bringing your budget from your other devices.** Try again once this iPhone is online and has synced, so Bow can match the file against everything you've entered.
 
 <Note>
   Importing changes your budget, so it needs a plan. While your budget is [read-only](/subscriptions), Import Bank File opens Bow's plans.
